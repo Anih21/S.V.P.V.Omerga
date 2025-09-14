@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swami Vivekanand Prathamik Vidyamandir Omerga - Nurturing Young Minds</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the child-friendly theme */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-display {
+            font-family: 'Baloo 2', cursive;
+        }
+        .hero-bg {
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.35)), url('https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqcH0RGwCbvr_n09uuIMFjDahgucrRGtGRvxlqui6FKwNRSnuOPev6zXqP0imjGQSgk4yiE02IQl-rLE6_t8_FCiYqSkj8Q78c5M4ELYSJ4-yLqQzINIsUW6UKCDNg9bSS9k8Wv7A=s1360-w1360-h1020-rw');
+            background-size: cover;
+            background-position: center;
+        }
+        .btn-primary {
+            @apply bg-orange-500 text-white font-bold py-3 px-6 rounded-full hover:bg-orange-600 transition-all duration-300 transform hover:scale-105 shadow-lg;
+        }
+        .btn-secondary {
+            @apply bg-amber-400 text-gray-800 font-bold py-3 px-6 rounded-full hover:bg-amber-500 transition-all duration-300 transform hover:scale-105 shadow-lg;
+        }
+        .section-title {
+            @apply text-4xl font-display font-bold text-orange-800 mb-4 text-center;
+        }
+        .section-subtitle {
+             @apply text-lg text-gray-600 mb-12 text-center max-w-3xl mx-auto;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <img src="https://res.cloudinary.com/dkplc2mbj/image/upload/v1611831063/SV_bfd932c2c4.jpg" alt="School Logo" class="h-12 w-12 rounded-full mr-3 object-cover">
+                    <div class="flex flex-col">
+                        <span class="font-bold text-xl text-orange-800 font-display leading-tight">Swami Vivekanand Prathamik Vidyamandir, Omerga</span>
+                        <span class="text-sm text-gray-600">स्वामी विवेकानंद प्राथमिक विद्यामंदिर, उमरगा</span>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <!-- Desktop Navigation -->
+                    <nav class="hidden md:flex space-x-1">
+                        <a href="#home" class="text-gray-600 hover:bg-orange-100 hover:text-orange-800 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#about" class="text-gray-600 hover:bg-orange-100 hover:text-orange-800 px-3 py-2 rounded-md text-sm font-medium">About Us</a>
+                        <a href="#academics" class="text-gray-600 hover:bg-orange-100 hover:text-orange-800 px-3 py-2 rounded-md text-sm font-medium">Academics</a>
+                        <a href="#admissions" class="text-gray-600 hover:bg-orange-100 hover:text-orange-800 px-3 py-2 rounded-md text-sm font-medium">Admissions</a>
+                        <a href="#facilities" class="text-gray-600 hover:bg-orange-100 hover:text-orange-800 px-3 py-2 rounded-md text-sm font-medium">Facilities</a>
+                        <a href="#activities" class="text-gray-600 hover:bg-orange-100 hover:text-orange-800 px-3 py-2 rounded-md text-sm font-medium">Activities</a>
+                        <a href="#gallery" class="text-gray-600 hover:bg-orange-100 hover:text-orange-800 px-3 py-2 rounded-md text-sm font-medium">Gallery</a>
+                        <a href="#contact" class="text-gray-600 hover:bg-orange-100 hover:text-orange-800 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </nav>
+                     <img src="https://m.media-amazon.com/images/I/91xW2FmahfL.jpg" alt="Saraswati Devi" class="hidden md:block h-16 w-16 rounded-full ml-4 object-cover">
+                    <!-- Mobile Menu Button -->
+                    <div class="md:hidden">
+                        <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="text-gray-700 hover:bg-orange-100 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#about" class="text-gray-700 hover:bg-orange-100 block px-3 py-2 rounded-md text-base font-medium">About Us</a>
+                <a href="#academics" class="text-gray-700 hover:bg-orange-100 block px-3 py-2 rounded-md text-base font-medium">Academics</a>
+                <a href="#admissions" class="text-gray-700 hover:bg-orange-100 block px-3 py-2 rounded-md text-base font-medium">Admissions</a>
+                <a href="#facilities" class="text-gray-700 hover:bg-orange-100 block px-3 py-2 rounded-md text-base font-medium">Facilities</a>
+                <a href="#activities" class="text-gray-700 hover:bg-orange-100 block px-3 py-2 rounded-md text-base font-medium">Activities</a>
+                <a href="#gallery" class="text-gray-700 hover:bg-orange-100 block px-3 py-2 rounded-md text-base font-medium">Gallery</a>
+                <a href="#contact" class="text-gray-700 hover:bg-orange-100 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-bg pt-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center min-h-screen">
+                <div class="text-center bg-white/70 p-12 rounded-3xl shadow-2xl backdrop-blur-sm">
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-orange-900 font-display leading-tight">Welcome to</h1>
+                    <h2 class="text-3xl md:text-5xl font-bold text-orange-700 font-display mb-2">Swami Vivekanand Prathamik Vidyamandir, Omerga</h2>
+                    <h3 class="text-2xl md:text-4xl font-bold text-orange-600 font-display mb-6">स्वामी विवेकानंद प्राथमिक विद्यामंदिर, उमरगा</h3>
+                    <p class="text-xl md:text-2xl text-gray-700 font-bold mb-8">"केल्याने होत आहे रे, आधी केलेची पाहिजे"</p>
+                    <div class="space-x-4">
+                        <a href="#admissions" class="btn-primary">Admissions Open</a>
+                        <a href="#about" class="btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+               <h3 class="text-2xl font-bold text-orange-700 font-display"><B>शाळेबद्दल विशेष माहिती</B></h3>
+				<br><br>
+                <p class="section-subtitle"><B>अशी जागा जिथे शिकणे मजेदार असते, मूल्ये रुजवली जातात आणि भविष्य काळजीपूर्वक आणि समर्पणाने घडवले जाते..</B></p>
+				<br><br>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <h3 class="text-2xl font-bold text-orange-700 font-display"><B>आमच्या शाळेचे उद्दिष्ट </B></h3>
+                        <p class="text-gray-600"><B>आमचे ध्येय एक सुरक्षित, शिस्तबद्ध आणि उत्पादक वातावरण प्रदान करणे आहे जे विद्यार्थ्यांना तंत्रज्ञानदृष्ट्या प्रगत जगात यशस्वी होण्यासाठी ज्ञान आणि कौशल्ये मिळविण्यास सक्षम करते. आम्ही टीकात्मक विचारसरणी, सर्जनशीलता आणि शिक्षणासाठी आजीवन प्रेम जोपासण्याचे उद्दिष्ट ठेवतो.</B></p>
+                        <h3 class="text-2xl font-bold text-orange-700 font-display mt-6"> <B>स्वामी विवेकानंद यांच्या प्रेरणेने</B></h3>
+                        <p class="text-gray-600"><B>उठा, जागे व्हा आणि ध्येय साध्य होईपर्यंत थांबू नका." आम्ही स्वामी विवेकानंदांच्या शिकवणींपासून प्रेरणा घेतो, ज्यामध्ये आत्मविश्वास, शक्ती आणि मानवतेची सेवा करण्यासाठी ज्ञानाचा पाठलाग यावर भर दिला जातो. आम्ही प्रत्येक मुलामध्ये ही मूल्ये रुजवण्याचा प्रयत्न करतो.</B></p>
+                        <div class="mt-6 bg-orange-50 border-l-4 border-orange-500 text-orange-800 p-4 rounded-r-lg" role="alert">
+                            <h4 class="font-bold font-display text-lg">स्वामी विवेकानंदांचे विचार (Thoughts of Swami Vivekananda)</h4>
+                            <blockquote class="mt-2 italic border-l-2 border-orange-300 pl-4">
+                                <p>"उठा, जागे व्हा आणि ध्येय प्राप्त होईपर्यंत थांबू नका."</p>
+                                <cite class="text-sm text-gray-600 not-italic">- स्वामी विवेकानंद</cite>
+                            </blockquote>
+                            <blockquote class="mt-4 italic border-l-2 border-orange-300 pl-4">
+                                <p>"स्वतःवर विश्वास ठेवा, महान शक्ती तुमच्यात आहे."</p>
+                                <cite class="text-sm text-gray-600 not-italic">- स्वामी विवेकानंद</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="bg-orange-100 p-8 rounded-3xl shadow-lg text-center">
+                        <img src="https://placehold.co/150x150/F97316/FFFFFF/png?text=Principal" alt="Principal" class="w-36 h-36 rounded-full mx-auto mb-4 border-4 border-white shadow-md">
+                        <h4 class="text-xl font-bold text-orange-800">Principal's Message</h4>
+                        <p class="text-gray-600 mt-2 italic">"Welcome to our family! We believe in providing an education that goes beyond academics, focusing on the holistic development of each child. Our dedicated team is here to guide and support your child's journey to success."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academics Section -->
+        <section id="academics" class="py-20 bg-orange-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-2xl font-bold text-orange-700 font-display mt-6"> <B>शैक्षणिक तपशील</B></h3>
+				<br><br>
+                <p class="section-subtitle"> <B>1. आम्ही इयत्ता 1 ते 7 साठी खास अभ्यासक्रम देतो.</B></p>
+				<p class="section-subtitle"> <B>2. अभ्यासक्रम मुलांच्या ज्ञानविकासाला चालना देतो.</B></p>
+				<p class="section-subtitle"> <B>3.सर्व विषयांमध्ये भक्कम शैक्षणिक पाया घडवतो.</B></p>
+				<p class="section-subtitle"> <B>4.मुलांच्या सर्वांगीण व्यक्तिमत्व विकासावर लक्ष केंद्रित करतो.</B></p>
+				<p class="section-subtitle"> <B>5. उज्ज्वल भविष्यासाठी सक्षम आणि आत्मविश्वासू विद्यार्थी तयार करतो.</B></p>
+
+<br><br>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Curriculum Card -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-bold text-orange-700 font-display mb-4">Our Curriculum</h3>
+                        <p class="text-gray-600 mb-4">Our curriculum integrates the best of traditional and modern teaching methodologies. We focus on activity-based learning to make education engaging and effective.</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Subjects: English, Marathi, Hindi, Maths, EVS</li>
+                            <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Smart Classroom Integration</li>
+                            <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Project-Based Learning</li>
+                            <li class="flex items-center"><span class="text-orange-500 mr-2">✓</span> Regular Assessments</li>
+                        </ul>
+                    </div>
+                    <!-- Teacher Intro Section -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 col-span-1 lg:col-span-2">
+                         <h3 class="text-2xl font-bold text-orange-700 font-display mb-4">आमचे नियामक मंडळ.</h3>
+                         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                            <div class="text-center">
+                                <img src=" " class="w-24 h-24 rounded-full mx-auto mb-2 shadow-md">
+                                <h5 class="font-bold text-gray-800">Dr. Chandrakant R. Mahajan</h5>
+                                <p class="text-sm text-gray-500"><b>संस्थापक अध्यक्ष</b></p>
+                            </div>
+							<div class="text-center">
+                                <img src=" " class="w-24 h-24 rounded-full mx-auto mb-2 shadow-md">
+                                <h5 class="font-bold text-gray-800">Shri. Mallikarjun Appa Dandge</h5>
+                                <p class="text-sm text-gray-500"><b>संस्थापक अध्यक्ष</b></p>
+                            </div>
+                            <div class="text-center">
+                                <img src=" " class="w-24 h-24 rounded-full mx-auto mb-2 shadow-md">
+                                <h5 class="font-bold text-gray-800">Dr. Kapil C. Mahajan</h5>
+                                <p class="text-sm text-gray-500"><b>कार्यवाहक</b></p>
+                            </div>
+                             <div class="text-center">
+                                <img src=" " class="w-24 h-24 rounded-full mx-auto mb-2 shadow-md">
+                                <h5 class="font-bold text-gray-800"></h5>
+                                <p class="text-sm text-gray-500"><b></b></p>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Admissions Section -->
+        <section id="admissions" class="py-20 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+               
+             
+                <div class="max-w-4xl mx-auto bg-orange-50 p-10 rounded-3xl shadow-lg border-2 border-orange-200">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-bold text-orange-800 mb-4">प्रवेश प्रक्रिया.</h3>
+                            <ol class="list-decimal list-inside space-y-2 text-gray-700">
+							    <li><B>शाळेतील प्राध्यापकांशी थेट संपर्क साधा.</B></li>
+                                <li><B>विद्यार्थी आणि पालकांसोबत एका संक्षिप्त संवाद सत्रात सहभागी व्हा.</B></li>
+                                <li><B>प्रवेशाची पुष्टी ईमेल/फोनद्वारे कळवली जाईल.</B></li>
+                            </ol>
+                            <h3 class="text-xl font-bold text-orange-800 mt-6 mb-4">आवश्यक कागदपत्रे.</h3>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><B>जन्माचा दाखला.</B></li>
+                                <li><B>आधार कार्ड (विद्यार्थी आणि पालक.</B></li>
+                                <li><B>मागील वर्षाचे रिपोर्ट कार्ड (लागू असल्यास).</B></li>
+                                <li><B>पासपोर्ट आकाराचे फोटो.</B></li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl text-center flex flex-col justify-center items-center">
+                 
+                           <h3 class="text-xl font-bold text-orange-800 mt-6 mb-4"><B>संपर्क </h3>
+                            <a href="tel:+910000000000" class="text-orange-600 font-bold text-lg hover:underline">+91 12345 67890</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facilities Section -->
+        <section id="facilities" class="py-20 bg-orange-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-2xl font-bold text-orange-700 font-display mt-6"> <B>आमच्या सुविधा :</B></h3>
+				<br><br>
+                <p class="section-subtitle">"आम्ही आमच्या विद्यार्थ्यांच्या सर्वांगीण विकासासाठी डिझाइन केलेल्या सुविधांसह अत्याधुनिक शिक्षण वातावरण प्रदान करतो. शाळेत सुसज्ज ग्रंथालय, संगणक प्रयोगशाळा, विज्ञान प्रयोगशाळा, डिजिटल स्मार्ट क्लासरूम, प्रशस्त खेळाचे मैदान, क्रीडा व सांस्कृतिक उपक्रमांची सोय, तसेच सुरक्षित आणि प्रेरणादायी वातावरण उपलब्ध आहे. या सर्व सुविधांमुळे विद्यार्थ्यांचा बौद्धिक, शारीरिक, सामाजिक व नैतिक विकास घडतो."</p>
+                <br><br>
+				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+                    <!-- Facility Card -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="bg-orange-100 w-20 h-20 rounded-full mx-auto flex items-center justify-center mb-4">
+                            <!-- SVG Icon -->
+                            <svg class="w-12 h-12 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-800">Smart Classrooms</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="bg-orange-100 w-20 h-20 rounded-full mx-auto flex items-center justify-center mb-4">
+                            <svg class="w-12 h-12 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-800">Library</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="bg-orange-100 w-20 h-20 rounded-full mx-auto flex items-center justify-center mb-4">
+                           <svg class="w-12 h-12 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-800">Computer Lab</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="bg-orange-100 w-20 h-20 rounded-full mx-auto flex items-center justify-center mb-4">
+                           <svg class="w-12 h-12 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222 4 2.222V20M1 12l5.373 2.986M17.627 15l5.373-2.986"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-800">Playground</h3>
+                    </div>
+                     <div class="bg-white p-6 rounded-2xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="bg-orange-100 w-20 h-20 rounded-full mx-auto flex items-center justify-center mb-4">
+                           <svg class="w-12 h-12 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-lg text-gray-800">Medical Support</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activities & Events Section -->
+        <section id="activities" class="py-20 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+               <h3 class="text-2xl font-bold text-orange-700 font-display mt-6"> <B>क्रियाकलाप आणि गॅलरी : </B></h3>
+			   <br><br>
+                <p class="section-subtitle">शिक्षण हे केवळ वर्गखोल्यांपुरते मर्यादित नसून जीवन घडवण्याची एक प्रक्रिया आहे. आम्ही विद्यार्थ्यांना विविध सह-अभ्यासक्रम व उपक्रमांमध्ये सहभागी होण्यासाठी प्रोत्साहित करतो. क्रीडा, संगीत, नृत्य, कला, वादविवाद, प्रकल्प कार्य अशा अनेक क्रियाकलापांमुळे त्यांचा आत्मविश्वास आणि नेतृत्वगुण विकसित होतात. या उपक्रमांमधून मुलांना संघभावना, सर्जनशीलता आणि सामाजिक कौशल्ये आत्मसात करण्याची संधी मिळते. शालेय जीवनातील या रंगीबेरंगी अनुभवांमुळे विद्यार्थ्यांचा सर्वांगीण विकास साध्य होतो. अशा प्रकारे आमची शाळा शिक्षणाबरोबरच जीवनमूल्येही शिकवते.</p>
+				<br><br>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div>
+                        
+						<br><br>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <div class="bg-orange-100 text-orange-600 rounded-full h-12 w-12 flex items-center justify-center">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-2xl font-bold text-orange-700 font-display mb-4">आमचे नियमित सांस्कृतिक उपक्रम</h3>
+                                    
+									<p>
+									<ul>
+                                     <li>स्वातंत्र्य दिन उत्सव 🎉</li>
+									<li>प्रजासत्ताक दिन सोहळा </li>
+									<li>रक्षाबंधन साजरा 🎀</li>
+									<li>गणेशोत्सव 🌸</li>
+									<li>दिवाळी उत्सव ✨</li>
+									<li>शिक्षक दिन विशेष कार्यक्रम 👩‍🏫</li>
+									<li>बालदिन साजरा 👦👧</li>
+									<li>वार्षिक सांस्कृतिक महोत्सव 🎭</li>
+								</ul></p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <div class="bg-orange-100 text-orange-600 rounded-full h-12 w-12 flex items-center justify-center">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.783-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                   <h3 class="text-2xl font-bold text-orange-700 font-display mb-4">क्रीडा दिन</h3>
+                                    <p class="mt-1 text-gray-600">मैदानावर ऊर्जा, टीमवर्क आणि निरोगी स्पर्धेने भरलेला दिवस हा विद्यार्थ्यांच्या आयुष्यातील अविस्मरणीय अनुभव असतो. विविध खेळांच्या स्पर्धांमुळे मुलांमध्ये शारीरिक तंदुरुस्ती, शिस्त आणि चिकाटीची भावना विकसित होते. संघभावना, परस्पर सहकार्य आणि नेतृत्वगुण या उपक्रमांतून शिकायला मिळतात. खेळांच्या माध्यमातून विद्यार्थ्यांचा आत्मविश्वास वाढतो आणि निरोगी जीवनशैलीकडे त्यांचा दृष्टिकोन मजबूत होतो. अशा प्रकारे क्रीडा उपक्रम विद्यार्थ्यांच्या सर्वांगीण विकासात मोलाची भूमिका बजावतात.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-orange-50 p-8 rounded-2xl shadow-inner">
+                        <h3 class="text-2xl font-bold text-orange-700 font-display mb-4">Explore Our Gallery</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <a href="#gallery-annual-day" class="bg-white p-3 text-center rounded-lg shadow-sm hover:shadow-md hover:bg-amber-100 transition-all font-semibold text-gray-700">Annual Day</a>
+                            <a href="#gallery-classroom" class="bg-white p-3 text-center rounded-lg shadow-sm hover:shadow-md hover:bg-amber-100 transition-all font-semibold text-gray-700">Classroom</a>
+                            <a href="#gallery-art-class" class="bg-white p-3 text-center rounded-lg shadow-sm hover:shadow-md hover:bg-amber-100 transition-all font-semibold text-gray-700">Art Class</a>
+                            <a href="#gallery-computer-lab" class="bg-white p-3 text-center rounded-lg shadow-sm hover:shadow-md hover:bg-amber-100 transition-all font-semibold text-gray-700">Computer Lab</a>
+                            <a href="#gallery-sports-day" class="bg-white p-3 text-center rounded-lg shadow-sm hover:shadow-md hover:bg-amber-100 transition-all font-semibold text-gray-700">Sports Day</a>
+                            <a href="#gallery-playground" class="bg-white p-3 text-center rounded-lg shadow-sm hover:shadow-md hover:bg-amber-100 transition-all font-semibold text-gray-700">Playground</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="section-title">School Gallery</h2>
+                <p class="section-subtitle">A glimpse into the vibrant life at our school. Cherished moments from classrooms, events, and playground.</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="grid gap-4">
+                        <div id="gallery-annual-day"><img class="h-auto max-w-full rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer" src="https://placehold.co/400x600/fdbf80/333333?text=Annual+Day" alt="Annual Day"></div>
+                        <div><img class="h-auto max-w-full rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer" src="https://placehold.co/400x400/ffe69c/333333?text=Students+Learning" alt="Students Learning"></div>
+                    </div>
+                    <div class="grid gap-4">
+                        <div id="gallery-classroom"><img class="h-auto max-w-full rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer" src="https://placehold.co/400x400/fdbf80/333333?text=Classroom" alt="Classroom"></div>
+                        <div id="gallery-sports-day"><img class="h-auto max-w-full rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer" src="https://placehold.co/400x600/ffc0cb/333333?text=Sports+Day" alt="Sports Day"></div>
+                    </div>
+                    <div class="grid gap-4">
+                        <div id="gallery-art-class"><img class="h-auto max-w-full rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer" src="https://placehold.co/400x600/d1b3ff/333333?text=Art+Class" alt="Art Class"></div>
+                        <div id="gallery-playground"><img class="h-auto max-w-full rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer" src="C:\Users\ADMIN\Desktop\SVPV\playground.webp" alt="Playground"></div>
+                    </div>
+                    <div class="grid gap-4">
+                        <div id="gallery-computer-lab"><img class="h-auto max-w-full rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer" src="https://placehold.co/400x400/ffe69c/333333?text=Computer+Lab" alt="Computer Lab"></div>
+                        <div><img class="h-auto max-w-full rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer" src="https://placehold.co/400x600/b0ffc3/333333?text=Library" alt="Library"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                            <h3 class="text-2xl font-bold text-orange-700 font-display mb-6">संपर्क  : 0987654321</h3>
+                 <h3 class="text-2xl font-bold text-orange-700 font-display mb-6">काही प्रश्न आहेत का ? आम्हाला ते सोडवायला आवडेल. खालीलपैकी कोणत्याही पद्धती वापरून आमच्याशी संपर्क साधा.</h3>
+                <div class="flex flex-wrap -mx-4">
+                    <!-- Contact Info & Map -->
+                    <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
+                        <div class="bg-gray-50 p-8 rounded-2xl shadow-lg h-full">
+                            <h3 class="text-2xl font-bold text-orange-700 font-display mb-6">Get in Touch</h3>
+                            <div class="space-y-4 text-gray-600">
+                                <p class="flex items-start"><span class="mt-1 mr-3 text-orange-500"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></span><span>Swami Vivekanand School, RJHF+V3M, Omerga, Maharashtra 413606</span></p>
+                                <p class="flex items-center"><span class="mr-3 text-orange-500"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg></span><a href="tel:+911234567890" class="hover:text-orange-700">+91 12345 67890</a></p>
+                                <p class="flex items-center"><span class="mr-3 text-orange-500"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></span><a href="mailto:info@svpv.edu" class="hover:text-orange-700">info@svpv.edu</a></p>
+                            </div>
+                            <div class="mt-6 rounded-lg overflow-hidden">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3795.733596954209!2d76.62256787593189!3d17.944686883041924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc34b1218151325%3A0x28689c16922e960!2sSwami%20Vivekanand%20School!5e0!3m2!1sen!2sin!4v1726249266395!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact Form -->
+                    <div class="w-full lg:w-1/2 px-4">
+                        <div class="bg-orange-50 p-8 rounded-2xl shadow-lg h-full">
+                             <h3 class="text-2xl font-bold text-orange-700 font-display mb-6">Send us a Message</h3>
+                             <form action="#" method="POST">
+                                <div class="mb-4">
+                                    <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Full Name</label>
+                                    <input type="text" id="name" name="name" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-orange-400" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email Address</label>
+                                    <input type="email" id="email" name="email" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-orange-400" required>
+                                </div>
+                                 <div class="mb-4">
+                                    <label for="subject" class="block text-gray-700 text-sm font-bold mb-2">Subject</label>
+                                    <input type="text" id="subject" name="subject" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-orange-400" required>
+                                </div>
+                                <div class="mb-6">
+                                    <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                                    <textarea id="message" name="message" rows="5" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-orange-400" required></textarea>
+                                </div>
+                                <div class="text-right">
+                                    <button type="submit" class="btn-primary">
+                                        Send Message
+                                    </button>
+                                </div>
+                             </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-orange-900 text-white">
+        <div class="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="col-span-2 md:col-span-1">
+                     <div class="flex items-center">
+                        <img src="https://res.cloudinary.com/dkplc2mbj/image/upload/v1611831063/SV_bfd932c2c4.jpg" alt="School Logo" class="h-10 w-10 rounded-full mr-3 object-cover">
+                        <span class="font-bold text-xl font-display">SVP Vidyamandir</span>
+                    </div>
+                    <p class="mt-4 text-orange-200 text-sm">"केल्याने होत आहे रे, आधी केलेची पाहिजे"</p>
+                </div>
+                <div>
+                    <h4 class="font-bold tracking-wider uppercase">Quick Links</h4>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#about" class="hover:text-amber-300 transition-colors">About Us</a></li>
+                        <li><a href="#academics" class="hover:text-amber-300 transition-colors">Academics</a></li>
+                        <li><a href="#admissions" class="hover:text-amber-300 transition-colors">Admissions</a></li>
+                        <li><a href="#contact" class="hover:text-amber-300 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold tracking-wider uppercase">Connect</h4>
+                     <ul class="mt-4 space-y-2">
+                        <li><a href="https://www.facebook.com/share/1JC42gRmX9/" class="hover:text-amber-300 transition-colors">Facebook</a></li>
+                        <li><a href="#" class="hover:text-amber-300 transition-colors">Instagram</a></li>
+                        <li><a href="#" class="hover:text-amber-300 transition-colors">YouTube</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h4 class="font-bold tracking-wider uppercase">Contact</h4>
+                     <ul class="mt-4 space-y-2 text-orange-200 text-sm">
+                        <li>Omerga, Maharashtra 413606</li>
+                        <li>+91 12345 67890</li>
+                        <li>info@svpv.edu</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-orange-800 text-center text-sm text-orange-300">
+                <p>&copy; 2025 Swami Vivekanand Prathamik Vidyamandir. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let i = 0; i < mobileMenuLinks.length; i++) {
+            mobileMenuLinks[i].addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
